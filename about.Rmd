@@ -1,0 +1,9 @@
+---
+title: "About this blog"
+description: |
+  This is the blog I am testing to be used in the near future. Kindly connect with me on social networks. twitter, linkedin and facebook.
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
