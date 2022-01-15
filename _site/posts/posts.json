@@ -1,22 +1,5 @@
 [
   {
-    "path": "posts/welcome/",
-    "title": "Welcome to My first ever Blog",
-    "description": "Welcome to our new blog, My first ever Blog. We hope you enjoy \nreading what we have to say!",
-    "author": [
-      {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
-      }
-    ],
-    "date": "2022-01-15",
-    "categories": [],
-    "contents": "\r\n\r\n\r\n\r\n",
-    "preview": {},
-    "last_modified": "2022-01-15T11:15:05+02:00",
-    "input_file": {}
-  },
-  {
     "path": "posts/2022-01-15-minaloc/",
     "title": "Nyirimana's related post",
     "description": "This is the second test on blog posting by Birasafab.",
@@ -32,5 +15,22 @@
     "preview": "posts/2022-01-15-minaloc/minaloc_files/figure-html5/unnamed-chunk-2-1.png",
     "last_modified": "2022-01-15T13:29:28+02:00",
     "input_file": "minaloc.knit.md"
+  },
+  {
+    "path": "posts/2022-01-15-jan-16-2022/",
+    "title": "Inka",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Birasafab",
+        "url": {}
+      }
+    ],
+    "date": "2022-01-15",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-01-15T15:11:39+02:00",
+    "input_file": "jan-16-2022.knit.md"
   }
 ]
