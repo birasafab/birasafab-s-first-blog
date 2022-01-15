@@ -1,5 +1,5 @@
 ---
-title: "Birasa Nyirimana's first blog"
+title: "Birasafab, the emerging data analyst"
 site: distill::distill_website
 listing: posts
 ---
