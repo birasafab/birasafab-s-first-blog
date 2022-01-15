@@ -1,7 +1,7 @@
 name: "birasafab's first blog"
-title: "Birasafab"
+title: "Nyirimana"
 description: |
-  My first ever Blog
+  Birasafab
 output_dir: "_site"
 navbar:
   right:
@@ -9,4 +9,6 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Hymns"
+      href: songs.html
 output: distill::distill_article
