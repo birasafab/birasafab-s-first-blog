@@ -1,5 +1,5 @@
 ---
-title: "MINALOC's related post"
+title: "Nyirimana's related post"
 description: |
   A short description of the post.
 author: Birasanyiri
