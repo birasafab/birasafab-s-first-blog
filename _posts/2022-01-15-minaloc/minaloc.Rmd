@@ -14,5 +14,13 @@ output:
 library(tidyverse)
 
 head(mtcars)
+
 ```
 
+## My first plot
+```{r}
+ggplot(mtcars,aes(mpg,hp))+
+  geom_point()+
+  geom_smooth()+
+  theme_bw()
+```
