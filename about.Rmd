@@ -1,14 +1,16 @@
 ---
-title: "About this blog"
+title: "About Me and this blog"
 description: |
   In this Blog, I will be posting all works related to my data analysis works and learning either using R or other statistical packages. 
 ---
 
 # How to connect with me on other social media networks
 
+This blog is maintained by Birasafab. It is all about my regular works especially data related works and other personal details. 
+
 In addition to this blog, I will also be adding other works related to my public engagement which I intend to share with other distinguished audience. 
 
-for Any suggestion to What I may improve, feel freee to reach me at the following details:
+for Any suggestion to What I may improve, feel free to reach me at the following details:
 
 **[twitter](https://twitter.com/BIRASAFABRICE)**
 
