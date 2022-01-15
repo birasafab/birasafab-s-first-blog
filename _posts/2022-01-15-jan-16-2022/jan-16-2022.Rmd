@@ -1,0 +1,13 @@
+---
+title: "Inka"
+description: |
+  A short description of the post.
+author: Birasafab
+date: 2022-01-15
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+
