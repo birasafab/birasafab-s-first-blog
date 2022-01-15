@@ -1,0 +1,18 @@
+---
+title: "MINALOC's related post"
+description: |
+  A short description of the post.
+author: Birasanyiri
+date: 2022-01-15
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r}
+# Add some code
+library(tidyverse)
+
+head(mtcars)
+```
+
