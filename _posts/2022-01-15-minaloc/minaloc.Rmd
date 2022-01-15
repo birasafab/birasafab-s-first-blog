@@ -1,7 +1,7 @@
 ---
 title: "Nyirimana's related post"
 description: |
-  A short description of the post.
+  This is the second test on blog posting by Birasafab.
 author: Birasanyiri
 date: 2022-01-15
 output:
