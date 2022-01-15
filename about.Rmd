@@ -1,9 +1,25 @@
 ---
 title: "About this blog"
 description: |
-  This is the blog I am testing to be used in the near future. Kindly connect with me on social networks. twitter, linkedin and facebook.
+  In this Blog, I will be posting all works related to my data analysis works and learning either using R or other statistical packages. 
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+# How to connect with me on other social media networks
+
+In addition to this blog, I will also be adding other works related to my public engagement which I intend to share with other distinguished audience. 
+
+for Any suggestion to What I may improve, feel freee to reach me at the following details:
+
+**[twitter](https://twitter.com/BIRASAFABRICE)**
+
+**[linkedIn](https://www.linkedin.com/in/birasa-fabrice-566104b6/)**
+
+**[email](https://birasafab@gmail.com)**
+
+__[Rpubs.com](https://rpubs.com/birasafab)__
+
+__[Youtube](https://www.youtube.com/channel/UCkaDk6yajihpk7gOZVATkag)__
+
+__[github](https://github.com/birasafab)__
+
+Thank you for interest in my blog. Cheers!
