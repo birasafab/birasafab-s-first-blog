@@ -1,7 +1,7 @@
-name: "birasafab's first blog"
-title: "Nyirimana"
+name: "My first blog"
+title: "I am not the best, but I try my best!"
 description: |
-  Birasafab
+  This blog is maintained by Birasafab
 output_dir: "_site"
 navbar:
   right:
