@@ -12,6 +12,7 @@ navbar:
     - text: "Hymns"
       href: songs.html
 output: distill::distill_article
+base_url: https://beta.rstudioconnect.com/content/11424/
 collections:
   posts:
     disqus: reproducible-finance-with-r
