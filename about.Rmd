@@ -4,7 +4,22 @@ description: |
   In this Blog, I will be posting all works related to my data analysis works and learning either using R or other statistical packages. 
 ---
 
-# How to connect with me on other social media networks
+
+## My studying career
+
+1998-2004 : Kimisagara Primary School
+
+2005-2007 : Rusumo High School
+
+2008-2010 : Groupe Scolaire Kabare
+
+2011/12-2015: University of Rwanda, Huye Campus
+
+2016-2018 : Kigali Independent University (ULK)
+
+---
+
+## How to connect with me on other social media networks
 
 This blog is maintained by Birasafab. It is all about my regular works especially data related works and other personal details. 
 
@@ -25,3 +40,16 @@ __[Youtube](https://www.youtube.com/channel/UCkaDk6yajihpk7gOZVATkag)__
 __[github](https://github.com/birasafab)__
 
 Thank you for interest in my blog. Cheers!
+
+---
+
+## My interest
+
+I am mostly interested in data related work whereby my works are often post here on this blog and my twitter account. 
+
+I mostly read articles related to R programming for data science.
+
+I enjoy sharing the knowledge acquired along my career development 
+
+I am a christian and believer of WMB message as the prophet of this end time. **Malachi 4:5**
+
