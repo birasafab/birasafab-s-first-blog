@@ -1,5 +1,5 @@
 ---
-title: "Birasafab, the emerging data analyst"
+title: "Birasafab, I am an emerging data analyst"
 site: distill::distill_website
 listing: posts
 ---

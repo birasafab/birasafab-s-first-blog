@@ -1,7 +1,7 @@
 name: "My first blog"
-title: "I am not the best, but I try my best!"
+title: "Data Analytics"
 description: |
-  This blog is maintained by Birasafab
+  This blog is maintained by Birasa Fabrice
 output_dir: "_site"
 navbar:
   right:
