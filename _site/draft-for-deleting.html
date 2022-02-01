@@ -12,7 +12,7 @@
 <meta name="author" content="birasafab" />
 
 
-<title>Hymns</title>
+<title>draft for delete</title>
 
 <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content=""/>
@@ -897,16 +897,43 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Hymns</h1>
+<h1 class="title toc-ignore">draft for delete</h1>
 <h4 class="author">birasafab</h4>
-<h4 class="date">1/18/2022</h4>
+<h4 class="date">1/19/2022</h4>
 
 </div>
 
 
-<div id="this-is-me-thanks" class="section level1">
-<h1>This is me, thanks!</h1>
-</div>
+<p>for deleting this file</p>
+<pre class="r"><code># read a sample file (R logo)
+img &lt;- readPNG(system.file(&quot;img&quot;, &quot;Rlogo.png&quot;, package=&quot;png&quot;))
+
+# read it also in native format
+img.n &lt;- readPNG(system.file(&quot;img&quot;, &quot;Rlogo.png&quot;, package=&quot;png&quot;), TRUE)
+
+# if your R supports it, we&#39;ll plot it
+if (exists(&quot;rasterImage&quot;)) { # can plot only in R 2.11.0 and higher
+  plot(1:2, type=&#39;n&#39;)
+
+  if (names(dev.cur()) == &quot;windows&quot;) {
+    # windows device doesn&#39;t support semi-transparency so we&#39;ll need
+    # to flatten the image
+    transparent &lt;- img[,,4] == 0
+    img &lt;- as.raster(img[,,1:3])
+    img[transparent] &lt;- NA
+
+    # interpolate must be FALSE on Windows, otherwise R will
+    # try to interpolate transparency and fail
+    rasterImage(img, 1.2, 1.27, 1.8, 1.73, interpolate=FALSE)
+
+  } else {
+    # any reasonable device will be fine using alpha
+    rasterImage(img, 1.2, 1.27, 1.8, 1.73)
+    rasterImage(img.n, 1.5, 1.5, 1.9, 1.8)
+
+  }
+}</code></pre>
+<p><img src="draft-for-deleting_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
