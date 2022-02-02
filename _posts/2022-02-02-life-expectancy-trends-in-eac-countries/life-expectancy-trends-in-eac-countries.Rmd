@@ -1,0 +1,141 @@
+---
+title: "Life Expectancy trends in EAC countries"
+description: |
+  In this post, I have visualized the variation trend in EAC countries regarding the life expectancy of its citizens. I have used R Programming language for both analysis and creation of this post as well. # **Life Expectancy** in **EAC countries** has been getting better over time since **1960**.
+author:
+  - name: Birasafab
+    url: {}
+date: 2022-02-02
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+## Loading the required packages 
+
+library(tidyverse)
+library(scales)
+theme_set(theme_light())
+library(bbplot)
+# pacman::p_install_gh("bbc/bbplot")
+library(WDI)
+```
+
+
+## Introduction
+
+I have used the World bank data through `WDI` package, I have also used `bbplot` package that was installed by way of pacman:: p_install. 
+
+```{r }
+
+expectancy = WDI(indicator = "SP.DYN.LE00.IN",country = c("RW","KE","UG","BI","TZ")) 
+life_expectancy = expectancy %>%
+  select(country,lifeExp =SP.DYN.LE00.IN,year) %>% 
+  filter(!is.na(lifeExp))
+```
+
+The following is the interactive table of data I used during my analysis.
+
+```{r}
+DT::datatable(life_expectancy)
+```
+
+For my personal interest, I have restricted my dataset to capture only 3 indicators, those are Country name, Life Expectancy (in years) and year of observation. 
+
+**Note:**
+
+* This is article is limited on visualizing **Life Expectancy** among the 5 EAC countries, those are Burundi, Uganda, Kenya, Rwanda and Tanzania.
+
+* The period of interest range between 1960 and 2019
+
+
+* As the below plot, Kenya has been ahead until replaced by Rwanda in 2000s on level of Life Expectancy among EAC countries.
+
+```{r echo=FALSE, warning=FALSE, fig.align='center'}
+
+# For those who prefer animating lines instead of labels
+
+# finding the maximum points
+maximum = life_expectancy %>% 
+  filter(year %in% c(2019))
+
+life_expectancy %>% 
+  ggplot(aes(year,lifeExp, color=  country))+
+  geom_line()+
+ # geom_label(aes(label = country))+
+ # bbc_style()+
+  scale_y_continuous(limits = c(25,70),
+                     breaks = seq(25,70, by = 10))+
+  labs(title = "Life Expectancy")+
+#   transition_reveal(along = year)+
+  geom_label(data = maximum,aes(label = country))
+```
+
+
+**Comparing EAC countries' life expectancy by using dumbbel by using `ggalt` package**
+
+In the following plot, I have shown the change in Life Expectancy between 1960 and 2019 (taking only two individual years). Rwanda is the first country with the highest increase in Life Expectancy by considering countries records in both **1960** and **2019**, Kenya being the Second countries on record has been on good track before being replaced by Rwanda. Tanzania is the Third followed by Uganda and Burundi respectively. 
+
+```{r fig.align='center', warning=FALSE}
+library(ggalt)
+
+dumbbell_df = life_expectancy %>% 
+  filter(year == 1960 | year == 2019) %>% 
+  spread(year,lifeExp) %>% 
+    mutate(gap = `2019`-`1960`) %>% 
+    arrange(-gap)
+
+dumbbell_df %>% 
+  ggplot(aes(x=`1960`,xend=`2019`,y=reorder(country,gap),group=country))+
+  geom_dumbbell(colour = "#dddddd",
+                size = 3,
+                colour_x = "#FAAB18",
+                colour_xend = "#1380A1")+
+  bbc_style()+
+  geom_label(aes(x = 55,label= paste0(round(gap,2)," years")),nudge_y = .2)+
+  labs(
+ # title = "Our Life expectancy is rising (EAC)",
+       subtitle = "Change in Life expectancy (1960-2019)")+
+ # geom_label(aes(y=5,x = 70,label="Rwanda has the highest life \n expectancy as of 2019 with 69.024 yrs"), nudge_x = 1,nudge_y = .4)+
+  geom_curve(aes(x=73,y=5.2,xend=69.3,yend=5),curvature = -.4,
+             arrow = arrow(length = unit(0.03, "npc")))+
+ # geom_text(aes(y=2,x = 67,label="Kenya has the Second highest \n life expectancy with increase \nof 19.94 yrs since 1960"), nudge_x = 5,nudge_y = .4)+
+  geom_curve(aes(x=70,y=2,xend=67,yend=2),curvature = -.5,
+             arrow = arrow(length = unit(0.03, "npc")))+
+  geom_text(aes(y = .98, x = 68,label = "Plot by birasafab@gmail.com \n \n Source: Worldbank data"))
+```
+
+## General Conclusion
+
+When comparing countries' Life Expectancy in 1960 versus that of 2019, EAC countries' Life Expectancy have increased as the following: 
+
+1) **Rwanda**: **26.41** years (being the first country with highest increase and is the one which has the highest Life Expectancy as of 2019 with **69.024** years)
+
+2) Tanzania: **21.86** years
+
+3) Burundi: **20.3** years
+
+4)  Kenya: **19.94** years (being the second country with highest life Expectancy as of 2019)
+
+5) Uganda: **19.01** years
+
+Generally, Life Expectancy among EAC countries has been rising between 1960 and 2019, this is might be attributed to the improvement in security within these countries, Policies in place, etc. 
+
+**Sources**: 
+
+* World Bank Data, accessed through `WDI` package;
+
+* `bbplot` package developed by BBC data reporting team;
+* further notes on the alignment used within this Rmarkdown document, kindly refer to this [link](https://stackoverflow.com/questions/43222169/how-to-justify-the-text-to-both-sides-when-knitting-html-in-rmarkdown)
+
+## Future interactions
+
+Should you seek any further interactions with me, kindly find more details about me in the **About** table in the top-right corner of this blog. 
+
+Thank you for having interest in my blog post. May God bless you!
+
+Birasafab.
