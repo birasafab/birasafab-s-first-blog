@@ -28,7 +28,7 @@ library(WDI)
 
 ## Introduction
 
-I have used the World bank data through `WDI` package, I have also used `bbplot` package that was installed by way of pacman:: p_install. 
+In this blog post, I have used the World bank data through `WDI` package, I have also used `bbplot` package that was installed by way of pacman:: p_install. 
 
 ```{r }
 
