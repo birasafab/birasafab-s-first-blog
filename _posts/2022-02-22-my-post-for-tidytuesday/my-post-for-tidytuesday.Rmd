@@ -71,4 +71,4 @@ freedom %>%
   )
 ```
 
-If you are interested in the above plot, feel free view its [source code](https://github.com/birasafab/Tidytuesday2022/tree/main/2022_week08)
+If you are interested in the above plot, feel free to view its [source code](https://github.com/birasafab/Tidytuesday2022/tree/main/2022_week08)
