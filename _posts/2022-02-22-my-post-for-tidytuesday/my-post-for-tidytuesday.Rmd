@@ -22,12 +22,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 
 library(tidyverse)
-library(tidytuesdayR) 
 
-tt <- tt_load("2022-02-22")
 ```
-
-
 
 
 # Freedom in the world
@@ -35,9 +31,12 @@ tt <- tt_load("2022-02-22")
 In this week's tidytuesday, I have visualized the worldwide countries' freedom status and the submitted plot looks like the following:
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
-freedom = tt$freedom
+
+# Loading this week's dataset
+freedom = readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-02-22/freedom.csv')
 
 
+# Data wrangling and plotting
 
 freedom %>% 
   mutate(Status = ifelse(Status=="F","Free",ifelse(Status=="NF","Not Free",ifelse(Status == "PF", "Partially Free",Status)))) %>% 
@@ -72,3 +71,4 @@ freedom %>%
   )
 ```
 
+If you are interested in the above plot, feel free view its [source code](https://github.com/birasafab/Tidytuesday2022/tree/main/2022_week08)
