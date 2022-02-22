@@ -1,0 +1,74 @@
+---
+title: "My post for Tidytuesday"
+description: |
+  In this blogpost, I will be consolidating all the weekly post I have submitted for tidytuesday which is an R learning community challenge whereby R learners across the world are given datasets (either clean or not clean) and they come up with informative plots/figures, etc.
+author:
+  - name: Birasafab
+    url: {https://github.com/birasafab/Tidytuesday2022}
+date: 2022-02-22
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+
+# TidyTuesday WEEK 08 (22 FEBRUARY 2022) --------------------------------------------------------------------
+
+```{r setup, include=FALSE}
+
+# Load the required packages and weekly Data
+
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(tidytuesdayR) 
+
+tt <- tt_load("2022-02-22")
+```
+
+
+
+
+# Freedom in the world
+
+In this week's tidytuesday, I have visualized the worldwide countries' freedom status and the submitted plot looks like the following:
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+freedom = tt$freedom
+
+
+
+freedom %>% 
+  mutate(Status = ifelse(Status=="F","Free",ifelse(Status=="NF","Not Free",ifelse(Status == "PF", "Partially Free",Status)))) %>% 
+  group_by(year) %>% 
+  count(Status) %>% 
+  mutate(Status = fct_reorder(Status,-n)) %>% 
+  ggplot(aes(year,n, fill = Status))+
+  geom_area()+
+  # geom_label(aes(label = Status))+
+  labs(
+    title = "Number of countries per Freedom status",
+    y = "Number of countries",
+    x = "Year of observation",
+    caption = "Plot by Birasafab | Freedom House & United Nations | #Tidytuesday",
+    fill = "Countries' Freedom status",
+    subtitle = "Many of the countries worldwide were reported to be free followed by \n partially free countries group and those which are not free"
+  )+
+  theme(
+    panel.grid = element_blank(),
+    plot.background = element_rect(fill = "black"),
+    panel.background = element_rect(fill = "black"),
+    axis.title = element_text(color = "white"),
+    plot.title = element_text(color = "white"),
+    plot.subtitle = element_text(color = "white"),
+    legend.background = element_rect(fill = "black"),
+    legend.title = element_text(color ="white"),
+    legend.text = element_text(color= "white"),
+    plot.caption = element_text(color = "white"),
+    axis.text = element_text(color = "white"),
+    axis.ticks = element_line(color = "white"),
+    axis.line = element_line(color = "white")
+  )
+```
+

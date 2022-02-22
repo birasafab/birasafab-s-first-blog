@@ -7,14 +7,23 @@
     <description>This blog is maintained by Birasa Fabrice
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Tue, 01 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>My post for Tidytuesday</title>
+      <dc:creator>Birasafab</dc:creator>
+      <link>https://birasafab.netlify.app/posts/2022-02-22-my-post-for-tidytuesday</link>
+      <description>In this blogpost, I will be consolidating all the weekly post I have submitted for tidytuesday which is an R learning community challenge whereby R learners across the world are given datasets (either clean or not clean) and they come up with informative plots/figures, etc.</description>
+      <guid>https://birasafab.netlify.app/posts/2022-02-22-my-post-for-tidytuesday</guid>
+      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://birasafab.netlify.app/posts/2022-02-22-my-post-for-tidytuesday/my-post-for-tidytuesday_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>Life Expectancy trends in EAC countries</title>
       <dc:creator>Birasafab</dc:creator>
       <link>https://birasafab.netlify.app/posts/2022-02-02-life-expectancy-trends-in-eac-countries</link>
       <description>In this post, I have visualized the variation trend in EAC countries regarding the life expectancy of its citizens. I have used R Programming language for both analysis and creation of this post as well. # **Life Expectancy** in **EAC countries** has been getting better over time since **1960**.</description>
       <guid>https://birasafab.netlify.app/posts/2022-02-02-life-expectancy-trends-in-eac-countries</guid>
-      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
       <media:content url="https://birasafab.netlify.app/posts/2022-02-02-life-expectancy-trends-in-eac-countries/life-expectancy-trends-in-eac-countries_files/figure-html5/unnamed-chunk-3-1.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
   </channel>

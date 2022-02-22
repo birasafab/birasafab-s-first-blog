@@ -1,5 +1,26 @@
 [
   {
+    "path": "posts/2022-02-22-my-post-for-tidytuesday/",
+    "title": "My post for Tidytuesday",
+    "description": "In this blogpost, I will be consolidating all the weekly post I have submitted for tidytuesday which is an R learning community challenge whereby R learners across the world are given datasets (either clean or not clean) and they come up with informative plots/figures, etc.",
+    "author": [
+      {
+        "name": "Birasafab",
+        "url": {
+          "https://github.com/birasafab/Tidytuesday2022": {}
+        }
+      }
+    ],
+    "date": "2022-02-22",
+    "categories": [],
+    "contents": "\r\nTidyTuesday WEEK 08 (22 FEBRUARY 2022) ——————————————————————–\r\nFreedom in the world\r\nIn this week’s tidytuesday, I have visualized the worldwide countries’ freedom status and the submitted plot looks like the following:\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-02-22-my-post-for-tidytuesday/my-post-for-tidytuesday_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2022-02-22T10:14:14+02:00",
+    "input_file": "my-post-for-tidytuesday.knit.md",
+    "preview_width": 1248,
+    "preview_height": 768
+  },
+  {
     "path": "posts/2022-02-02-life-expectancy-trends-in-eac-countries/",
     "title": "Life Expectancy trends in EAC countries",
     "description": "In this post, I have visualized the variation trend in EAC countries regarding the life expectancy of its citizens. I have used R Programming language for both analysis and creation of this post as well. # **Life Expectancy** in **EAC countries** has been getting better over time since **1960**.",
