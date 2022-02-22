@@ -2,7 +2,7 @@
   {
     "path": "posts/2022-02-22-my-post-for-tidytuesday/",
     "title": "My post for Tidytuesday",
-    "description": "In this blogpost, I will be consolidating all the weekly post I have submitted for tidytuesday which is an R learning community challenge whereby R learners across the world are given datasets (either clean or not clean) and they come up with informative plots/figures, etc.",
+    "description": "In this blogpost, I will be consolidating all the weekly posts I submit for tidytuesday which is an R learning community challenge whereby R learners across the world are given datasets (either clean or not clean) and they come up with informative plots/figures, etc.",
     "author": [
       {
         "name": "Birasafab",
@@ -15,7 +15,7 @@
     "categories": [],
     "contents": "\r\nTidyTuesday WEEK 08 (22 FEBRUARY 2022) ——————————————————————–\r\nFreedom in the world\r\nIn this week’s tidytuesday, I have visualized the worldwide countries’ freedom status and the submitted plot looks like the following:\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
     "preview": "posts/2022-02-22-my-post-for-tidytuesday/my-post-for-tidytuesday_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2022-02-22T10:14:14+02:00",
+    "last_modified": "2022-02-22T10:18:26+02:00",
     "input_file": "my-post-for-tidytuesday.knit.md",
     "preview_width": 1248,
     "preview_height": 768

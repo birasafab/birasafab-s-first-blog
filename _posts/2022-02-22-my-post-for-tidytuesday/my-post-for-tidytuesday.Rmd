@@ -1,7 +1,7 @@
 ---
 title: "My post for Tidytuesday"
 description: |
-  In this blogpost, I will be consolidating all the weekly post I have submitted for tidytuesday which is an R learning community challenge whereby R learners across the world are given datasets (either clean or not clean) and they come up with informative plots/figures, etc.
+  In this blogpost, I will be consolidating all the weekly posts I submit for tidytuesday which is an R learning community challenge whereby R learners across the world are given datasets (either clean or not clean) and they come up with informative plots/figures, etc.
 author:
   - name: Birasafab
     url: {https://github.com/birasafab/Tidytuesday2022}
