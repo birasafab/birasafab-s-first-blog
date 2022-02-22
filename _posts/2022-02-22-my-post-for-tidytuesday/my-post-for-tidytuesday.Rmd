@@ -30,7 +30,7 @@ library(tidyverse)
 
 In this week's tidytuesday, I have visualized the worldwide countries' freedom status and the submitted plot looks like the following:
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r World countries' freedom, echo=FALSE, message=FALSE, warning=FALSE}
 
 # Loading this week's dataset
 freedom = readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2022/2022-02-22/freedom.csv')
