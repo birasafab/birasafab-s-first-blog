@@ -13,9 +13,9 @@
     ],
     "date": "2022-02-22",
     "categories": [],
-    "contents": "\r\nTidyTuesday WEEK 08 (22 FEBRUARY 2022) ——————————————————————–\r\nFreedom in the world\r\nIn this week’s tidytuesday, I have visualized the worldwide countries’ freedom status and the submitted plot looks like the following:\r\n\r\n\r\n\r\nIf you are interested in the above plot, feel free to view its source code\r\n\r\n\r\n\r\n",
+    "contents": "\r\nFirst submission: TidyTuesday WEEK 08 (22 FEBRUARY 2022) ——————————————————————–\r\nFreedom in the world\r\nIn this week’s tidytuesday, I have visualized the worldwide countries’ freedom status and the submitted plot looks like the following:\r\n\r\n\r\n\r\nIf you are interested in the above plot, feel free to view its source code\r\nMy second submission for Week 08 tidytuesday ——————————————————————–\r\nLevel of freedom per continent\r\n\r\n\r\n\r\nIn the above plot, Africa and Asia were observed to the continents with the least freedom while Europe and Oceania were the continents with highest freedom.\r\n\r\n\r\n\r\n",
     "preview": "posts/2022-02-22-my-post-for-tidytuesday/my-post-for-tidytuesday_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2022-02-22T10:38:21+02:00",
+    "last_modified": "2022-03-01T13:37:39+02:00",
     "input_file": "my-post-for-tidytuesday.knit.md",
     "preview_width": 1248,
     "preview_height": 768
