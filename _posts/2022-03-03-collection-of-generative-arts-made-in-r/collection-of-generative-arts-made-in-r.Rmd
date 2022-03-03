@@ -1,0 +1,70 @@
+---
+title: "Collection of Generative Arts made in R"
+description: |
+  In this article, I will be sharing different generative arts that were made in R and are openly available along with their source code. Feel free to reach me on my details available in `About` section of this blog.
+author:
+  - name: Birasafab
+    url:
+      https://github.com/birasafab/Tidytuesday2022: {}
+date: 2022-03-03
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+# Generative art by [Antonio Sanchez](https://twitter.com/aschinchon)
+
+```{r echo=FALSE}
+
+
+library(tidyverse)
+library(WDI)
+library(scales)
+
+seq(-3,3,by=.01) %>%
+  expand.grid(x=., y=.) %>%
+  ggplot(aes(x=(1-x-sin(y^2)), y=(1+y-cos(x^2)))) +
+  geom_point(alpha=.05, shape=20, size=0)+
+  theme_void()+
+  coord_polar()
+```
+
+# Generative art by [Birasafab](https://twitter.com/BIRASAFABRICE)
+
+```{r echo=FALSE}
+
+
+wordl_gpd_ppp = WDI(indicator = "	
+NY.GDP.MKTP.PP.CD") %>% 
+  tibble()
+
+wordl_gpd_ppp %>%
+  janitor::clean_names() %>% 
+  ggplot(aes(ny_gdp_mktp_pp_cd, year, color = country))+
+  geom_jitter(size = 10)+
+  scale_x_continuous(label = comma)+
+  ylim(c(1990,2021))+
+  xlim(c(0,5000000000000))+
+  geom_label(x=  4590000000000, y = 2021, aes(label = "by Birasafab"), size = 4, fill = "yellow")+
+  theme_void( )+
+  theme(
+    legend.position = "none",
+    panel.background = element_rect(fill = "black")
+  )
+
+```
+
+
+# Generative art by [Raul Vequerizo](https://twitter.com/r_vaquerizo)
+```{r echo=FALSE}
+seq(-3,3,by=.05) %>%
+  expand.grid(x=., y=.) %>%
+  ggplot(aes(x=(1-x+atan(y)), y=(1+x-atan(x)))) +
+  geom_point(alpha=.15, size=0.1) +
+  theme_void() +
+  coord_polar()
+```
+
+I will keep updating this post as I find new generative arts, so you are invited to keep visiting this blogpost for new ideas regarding generative arts. You can even subscribe to my blogpost for notification my future blogposts.
+
+**Note**: If you want to view the source code, you can reach out to my github account as share in the about Section of this **[blog](https//:birasafab.netlify.app)**

@@ -1,5 +1,26 @@
 [
   {
+    "path": "posts/2022-03-03-collection-of-generative-arts-made-in-r/",
+    "title": "Collection of Generative Arts made in R",
+    "description": "In this article, I will be sharing different generative arts that were made in R and are openly available along with their source code. Feel free to reach me on my details available in `About` section of this blog.",
+    "author": [
+      {
+        "name": "Birasafab",
+        "url": {
+          "https://github.com/birasafab/Tidytuesday2022": {}
+        }
+      }
+    ],
+    "date": "2022-03-03",
+    "categories": [],
+    "contents": "\r\nGenerative art by Antonio Sanchez\r\n\r\n\r\n\r\nGenerative art by Birasafab\r\n\r\n\r\n\r\nGenerative art by Raul Vequerizo\r\n\r\n\r\n\r\nI will keep updating this post as I find new generative arts, so you are invited to keep visiting this blogpost for new ideas regarding generative arts. You can even subscribe to my blogpost for notification my future blogposts.\r\nNote: If you want to view the source code, you can reach out to my github account as share in the about Section of this blog\r\n\r\n\r\n\r\n",
+    "preview": "posts/2022-03-03-collection-of-generative-arts-made-in-r/collection-of-generative-arts-made-in-r_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2022-03-03T12:09:57+02:00",
+    "input_file": "collection-of-generative-arts-made-in-r.knit.md",
+    "preview_width": 1248,
+    "preview_height": 768
+  },
+  {
     "path": "posts/2022-02-22-my-post-for-tidytuesday/",
     "title": "My post for Tidytuesday",
     "description": "In this blogpost, I will be consolidating all the weekly posts I submit for tidytuesday which is an R learning community challenge whereby R learners across the world are given datasets (either clean or not clean) and they come up with informative plots/figures, etc.",
@@ -15,7 +36,7 @@
     "categories": [],
     "contents": "\r\nFirst submission: TidyTuesday WEEK 08 (22 FEBRUARY 2022) ——————————————————————–\r\nFreedom in the world\r\nIn this week’s tidytuesday, I have visualized the worldwide countries’ freedom status and the submitted plot looks like the following:\r\n\r\n\r\n\r\nIf you are interested in the above plot, feel free to view its source code\r\nMy second submission for Week 08 tidytuesday ——————————————————————–\r\nLevel of freedom per continent\r\n\r\n\r\n\r\nIn the above plot, Africa and Asia were observed to the continents with the least freedom while Europe and Oceania were the continents with highest freedom.\r\n\r\n\r\n\r\n",
     "preview": "posts/2022-02-22-my-post-for-tidytuesday/my-post-for-tidytuesday_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2022-03-01T13:37:39+02:00",
+    "last_modified": "2022-03-03T12:05:00+02:00",
     "input_file": "my-post-for-tidytuesday.knit.md",
     "preview_width": 1248,
     "preview_height": 768
