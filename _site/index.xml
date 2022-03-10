@@ -7,14 +7,23 @@
     <description>This blog is maintained by Birasa Fabrice
 </description>
     <generator>Distill</generator>
-    <lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Collection of Wordcloud created with R</title>
+      <dc:creator>Birasafab</dc:creator>
+      <link>https://birasafab.netlify.app/posts/2022-03-10-collection-of-wordcloud-created-with-r</link>
+      <description>A short description of the post.</description>
+      <guid>https://birasafab.netlify.app/posts/2022-03-10-collection-of-wordcloud-created-with-r</guid>
+      <pubDate>Wed, 09 Mar 2022 00:00:00 +0000</pubDate>
+      <media:content url="https://birasafab.netlify.app/posts/2022-03-10-collection-of-wordcloud-created-with-r/collection-of-wordcloud-created-with-r_files/figure-html5/unnamed-chunk-7-1.png" medium="image" type="image/png" width="1248" height="768"/>
+    </item>
     <item>
       <title>Collection of Generative Arts made in R</title>
       <dc:creator>Birasafab</dc:creator>
       <link>https://birasafab.netlify.app/posts/2022-03-03-collection-of-generative-arts-made-in-r</link>
       <description>In this article, I will be sharing different generative arts that were made in R and are openly available along with their source code. Feel free to reach me on my details available in `About` section of this blog.</description>
       <guid>https://birasafab.netlify.app/posts/2022-03-03-collection-of-generative-arts-made-in-r</guid>
-      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 03 Mar 2022 00:00:00 +0000</pubDate>
       <media:content url="https://birasafab.netlify.app/posts/2022-03-03-collection-of-generative-arts-made-in-r/collection-of-generative-arts-made-in-r_files/figure-html5/unnamed-chunk-1-1.png" medium="image" type="image/png" width="1248" height="768"/>
     </item>
     <item>

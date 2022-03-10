@@ -1,0 +1,173 @@
+---
+title: "Collection of Wordcloud created with R"
+description: |
+  A short description of the post.
+author:
+  - name: Birasafab
+    url:
+      https://github.com/birasafab/Tidytuesday2022: {}
+date: 2022-03-10
+output:
+  distill::distill_article:
+    self_contained: false
+editor_options: 
+  chunk_output_type: console
+---
+
+# Wordcloud made with 'wordcloud2' package
+```{r setup, include=FALSE}
+library(tidyverse)
+library(wordcloud2)
+
+
+library(tm)
+
+```
+
+
+
+
+```{r echo=FALSE}
+# reading the data to be used 
+
+
+apple = readr::read_csv('https://raw.githubusercontent.com/bkrai/R-files-from-YouTube/main/apple.csv')
+
+```
+
+
+```{r echo=FALSE}
+# data wrangling
+
+
+ corpus = iconv(apple$text, to = "UTF-8")
+
+ Corpus = Corpus(VectorSource(corpus))
+ 
+ # inspect(Corpus[1:5])
+```
+
+
+```{r Corpus, echo=FALSE}
+# cleaning text
+
+
+Corpus = Corpus %>% 
+  tm_map(tolower) %>% 
+  tm_map(removePunctuation) %>% 
+  tm_map(removeNumbers) %>% 
+  tm_map(removeWords, stopwords("english"))
+
+ # inspect(Corpus[1:5])
+```
+
+```{r echo=FALSE}
+removeUrl = function(x)gsub("http[[:alnum:]]*", "",x)
+
+Corpus = tm_map(Corpus,content_transformer(removeUrl))
+
+cleanset = tm_map(Corpus, stripWhitespace) 
+
+cleanset = cleanset %>% 
+  tm_map(removeWords,c("aapl","apple"))
+
+# inspect(cleanset[1:5])
+```
+
+
+```{r echo=FALSE}
+# Term document matrix
+
+tdm = TermDocumentMatrix(cleanset)
+
+tdm = as.matrix(tdm)
+```
+
+
+```{r echo=FALSE}
+
+## Data wrangling
+
+library(wordcloud)
+
+words = sort(rowSums(tdm),decreasing = TRUE)
+
+
+# cleaning and structuring the dataset of interest
+
+
+# library(wordcloud2)
+# 
+# # best way of installing unavailable packages or loading them in current session of R
+# if(!require(wordcloud2)) install.packages("wordcloud2")
+
+
+final = data.frame(
+  names(words),words
+)
+
+final = final %>% 
+  mutate(names.words.=str_replace_all(names.words.,"earnings","Birasa"))
+
+
+
+```
+
+
+
+# wordcloud in star shape
+
+```{r echo=FALSE}
+# star shape
+
+wordcloud2(final,
+           size = .7,
+           shape = "star")
+```
+
+
+
+# Bar plot by word frequencies
+```{r echo=FALSE}
+W = rowSums(tdm)
+
+
+selected = subset(W, W>=10)
+
+
+barplot(
+  selected,
+  las = 2,
+  col = rainbow(100))
+```
+
+
+
+# Wordcloud
+```{r echo=FALSE}
+
+set.seed(222)
+
+  wordcloud(words = names(words),
+            freq = words,
+            max.words = 150,
+            random.order = FALSE,
+            min.freq = 3,
+            colors = brewer.pal(8, "Dark2"),
+   #   scale = c(5,.4),
+      rot.per = .29)
+
+
+  
+ 
+#   # wordcloud in a star shape
+
+# wordcloud2(final,
+#            size = .7,
+#            shape = "star")
+
+```
+
+* The `wordcloud2` package is not working properly to allow me to produce additional `wordcloud` shapes. This issue I will investigate and come up with a solution to it. 
+
+thank you for being patient!
