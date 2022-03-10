@@ -65,6 +65,45 @@ seq(-3,3,by=.05) %>%
   coord_polar()
 ```
 
+
+# Generative art by [Antonio](https://twitter.com/aschinchon)
+```{r echo=FALSE}
+seq(from=-10, to=10, by = 0.05) %>%
+  expand.grid(x=., y=.) %>%
+  ggplot(aes(x=(.8*x^2+pi*cos(y)^2), y=(y+pi*sin(x)))) +
+  geom_point(alpha=.05, shape=20, size=0)+
+  theme_void()+coord_fixed()
+```
+
+
+# Generative art by [Antonio](https://twitter.com/aschinchon)
+```{r echo=FALSE}
+library(pracma)
+
+seq(-30, 30, by = .1) %>% expand.grid(x=., y=.) %>% 
+  ggplot(aes(x, y, fill=erf(sec(x)-sec(y)))) + 
+  geom_tile() + 
+  scale_fill_gradientn(colors=c("black", "white")) + 
+  ggmap::theme_nothing()
+```
+
+# Generative art by [Antonio](https://twitter.com/aschinchon)
+```{r echo=FALSE}
+
+n=500
+t1=1:n
+t0=seq(from=0,by=102,length.out=n)%%n
+
+tibble(x=cos((t1-1)*2*pi/n),y=sin((t1-1)*2*pi/n), 
+z=cos((t0-1)*2*pi/n),
+w=sin((t0-1)*2*pi/n)) %>% 
+ggplot(aes(x=x, y=y, xend=z,yend=w))+
+geom_segment(alpha=.2)+
+  coord_equal()+
+  theme_void()
+```
+
+
 I will keep updating this post as I find new generative arts, so you are invited to keep visiting this blogpost for new ideas regarding generative arts. You can even subscribe to my blogpost for notification my future blogposts.
 
 **Note**: If you want to view the source code, you can reach out to my github account as share in the about Section of this **[blog](https//:birasafab.netlify.app)**
